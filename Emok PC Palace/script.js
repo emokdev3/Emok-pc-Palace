@@ -75,18 +75,19 @@ const laptops = [
     // Student Laptops
     {
         id: 5,
-        name: "Dell Vostro 5402",
-        price: 4150.00,
+        name: "HP Elitebook Folio 1040 G3",
+        price: 300.00,
         image: "images/stud1.jpg",
-        description: "Professional laptop with backlit keyboard and fingerprint sensor",
+        description: "Super slim laptop with backlit keyboard and fingerprint sensor",
         category: "Student",
         specs: {
-            processor: "Intel Core i5 11th Generation",
-            ram: "8GB RAM",
+            processor: "Intel Core i7 6th Generation",
+            ram: "16GB DDR4",
             storage: "256GB SSD",
             speed: "2.40 GHz",
             display: "14\" FHD 1080p",
-            features: "Backlit Keyboard, Fingerprint Sensor"
+            features: "Backlit Keyboard, Fingerprint Sensor",
+            design: "Super Slim, Extremely Neat"
         }
     },
     {
