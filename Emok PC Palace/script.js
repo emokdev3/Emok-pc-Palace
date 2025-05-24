@@ -5,7 +5,7 @@ const laptops = [
         id: 1,
         name: "Acer Aspire",
         price: 1850.00,
-        image: "Assets/low1.jpg",
+        image: "New folder/low1.jpg",
         description: "Acer Aspire laptop with strong battery and neat design",
         category: "Low Budget",
         specs: {
@@ -21,17 +21,20 @@ const laptops = [
     },
     {
         id: 2,
-        name: "Budget Plus",
-        price: 499.99,
-        image: "Assets/low2.jpg",
-        description: "Enhanced budget laptop with better performance",
+        name: "Dell Laptop",
+        price: 1850.00,
+        image: "New folder/low2.jpg",
+        description: "Very portable Dell laptop with neat design, comes with bag and charger",
         category: "Low Budget",
         specs: {
-            processor: "AMD Athlon Silver 3050U",
-            ram: "8GB DDR4",
-            storage: "256GB SSD",
-            gpu: "AMD Radeon Graphics",
-            display: "15.6\" HD"
+            processor: "Intel Celeron 6th Generation Dual Core",
+            ram: "4GB RAM",
+            storage: "64GB + 64GB SD Card",
+            gpu: "Intel HD Graphics",
+            display: "12.5\" HD",
+            features: "Webcam, Bluetooth",
+            ports: "HDMI, USB ports",
+            accessories: "Laptop Bag, Charger"
         }
     },
     {
