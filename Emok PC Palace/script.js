@@ -5,7 +5,7 @@ const laptops = [
         id: 1,
         name: "Budget Essential",
         price: 399.99,
-        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "New folder/low1.jpg",
         description: "Basic laptop for everyday computing needs",
         category: "Low Budget",
         specs: {
@@ -20,7 +20,7 @@ const laptops = [
         id: 2,
         name: "Budget Plus",
         price: 499.99,
-        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/budget-plus.jpg",
         description: "Enhanced budget laptop with better performance",
         category: "Low Budget",
         specs: {
@@ -35,7 +35,7 @@ const laptops = [
         id: 3,
         name: "Budget Pro",
         price: 599.99,
-        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/budget-pro.jpg",
         description: "Professional budget laptop with good features",
         category: "Low Budget",
         specs: {
@@ -50,7 +50,7 @@ const laptops = [
         id: 4,
         name: "Budget Compact",
         price: 349.99,
-        image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/budget-compact.jpg",
         description: "Compact and lightweight budget laptop",
         category: "Low Budget",
         specs: {
@@ -67,7 +67,7 @@ const laptops = [
         id: 5,
         name: "Student Essential",
         price: 599.99,
-        image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/student-essential.jpg",
         description: "Affordable laptop perfect for students",
         category: "Student",
         specs: {
@@ -82,7 +82,7 @@ const laptops = [
         id: 6,
         name: "Student Pro",
         price: 799.99,
-        image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/student-pro.jpg",
         description: "Enhanced student laptop with better performance",
         category: "Student",
         specs: {
@@ -97,7 +97,7 @@ const laptops = [
         id: 7,
         name: "Student Premium",
         price: 899.99,
-        image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/student-premium.jpg",
         description: "Premium student laptop with touch screen",
         category: "Student",
         specs: {
@@ -112,7 +112,7 @@ const laptops = [
         id: 8,
         name: "Student Compact",
         price: 499.99,
-        image: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/student-compact.jpg",
         description: "Compact and lightweight student laptop",
         category: "Student",
         specs: {
@@ -129,7 +129,7 @@ const laptops = [
         id: 9,
         name: "Gaming Laptop Pro",
         price: 1299.99,
-        image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/gaming-pro.jpg",
         description: "High-performance gaming laptop with RTX 3080, 32GB RAM, 1TB SSD",
         category: "Gaming",
         specs: {
@@ -144,7 +144,7 @@ const laptops = [
         id: 10,
         name: "Gaming Beast X",
         price: 1499.99,
-        image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/gaming-beast.jpg",
         description: "Ultimate gaming machine with RTX 3090 and liquid cooling",
         category: "Gaming",
         specs: {
@@ -159,7 +159,7 @@ const laptops = [
         id: 11,
         name: "Gaming Elite",
         price: 999.99,
-        image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/gaming-elite.jpg",
         description: "Mid-range gaming laptop with excellent performance",
         category: "Gaming",
         specs: {
@@ -174,7 +174,7 @@ const laptops = [
         id: 12,
         name: "Gaming Ultra",
         price: 1799.99,
-        image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/gaming-ultra.jpg",
         description: "Premium gaming laptop with advanced cooling system",
         category: "Gaming",
         specs: {
