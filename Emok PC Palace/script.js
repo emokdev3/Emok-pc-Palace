@@ -56,17 +56,18 @@ const laptops = [
     },
     {
         id: 4,
-        name: "Budget Compact",
-        price: 349.99,
+        name: "HP Probook 11 G2",
+        price: 2500.00,
         image: "images/Low4.jpg",
-        description: "Compact and lightweight budget laptop",
+        description: "Professional laptop with fingerprint sensor and excellent battery life",
         category: "Low Budget",
         specs: {
-            processor: "Intel Celeron N4020",
-            ram: "4GB DDR4",
-            storage: "64GB eMMC",
-            gpu: "Intel UHD Graphics 600",
-            display: "11.6\" HD"
+            processor: "Intel Core i3 6th Generation",
+            ram: "8GB RAM",
+            storage: "128GB SSD",
+            features: "Fingerprint Sensor, Tough Screen",
+            display: "13\" Screen",
+            battery: "Excellent Battery Life"
         }
     },
 
