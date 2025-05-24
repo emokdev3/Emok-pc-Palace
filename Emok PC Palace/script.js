@@ -128,68 +128,6 @@ const laptops = [
             gpu: "Intel UHD Graphics",
             display: "11.6\" HD"
         }
-    },
-
-    // Gaming Laptops
-    {
-        id: 9,
-        name: "Gaming Laptop Pro",
-        price: 1299.99,
-        image: "images/bac1.jpg",
-        description: "High-performance gaming laptop with RTX 3080, 32GB RAM, 1TB SSD",
-        category: "Gaming",
-        specs: {
-            processor: "Intel Core i9-12900H",
-            ram: "32GB DDR5",
-            storage: "1TB NVMe SSD",
-            gpu: "NVIDIA RTX 3080",
-            display: "15.6\" 165Hz QHD"
-        }
-    },
-    {
-        id: 10,
-        name: "Gaming Beast X",
-        price: 1499.99,
-        image: "images/gaming-beast.jpg",
-        description: "Ultimate gaming machine with RTX 3090 and liquid cooling",
-        category: "Gaming",
-        specs: {
-            processor: "AMD Ryzen 9 5950X",
-            ram: "64GB DDR4",
-            storage: "2TB NVMe SSD",
-            gpu: "NVIDIA RTX 3090",
-            display: "17.3\" 240Hz QHD"
-        }
-    },
-    {
-        id: 11,
-        name: "Gaming Elite",
-        price: 999.99,
-        image: "images/gaming-elite.jpg",
-        description: "Mid-range gaming laptop with excellent performance",
-        category: "Gaming",
-        specs: {
-            processor: "Intel Core i7-11800H",
-            ram: "16GB DDR4",
-            storage: "512GB NVMe SSD",
-            gpu: "NVIDIA RTX 3060",
-            display: "15.6\" 144Hz FHD"
-        }
-    },
-    {
-        id: 12,
-        name: "Gaming Ultra",
-        price: 1799.99,
-        image: "images/gaming-ultra.jpg",
-        description: "Premium gaming laptop with advanced cooling system",
-        category: "Gaming",
-        specs: {
-            processor: "Intel Core i9-13900K",
-            ram: "32GB DDR5",
-            storage: "2TB NVMe SSD",
-            gpu: "NVIDIA RTX 4080",
-            display: "17.3\" 4K 144Hz"
-        }
     }
 ];
 
