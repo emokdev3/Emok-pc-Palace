@@ -74,17 +74,18 @@ const laptops = [
     // Student Laptops
     {
         id: 5,
-        name: "Student Essential",
-        price: 599.99,
+        name: "Dell Vostro 5402",
+        price: 4150.00,
         image: "images/stud1.jpg",
-        description: "Affordable laptop perfect for students",
+        description: "Professional laptop with backlit keyboard and fingerprint sensor",
         category: "Student",
         specs: {
-            processor: "AMD Ryzen 5 5500U",
-            ram: "8GB DDR4",
+            processor: "Intel Core i5 11th Generation",
+            ram: "8GB RAM",
             storage: "256GB SSD",
-            gpu: "AMD Radeon Graphics",
-            display: "15.6\" HD"
+            speed: "2.40 GHz",
+            display: "14\" FHD 1080p",
+            features: "Backlit Keyboard, Fingerprint Sensor"
         }
     },
     {
