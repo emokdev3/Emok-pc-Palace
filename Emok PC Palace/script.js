@@ -5,7 +5,7 @@ const laptops = [
         id: 1,
         name: "Acer Aspire",
         price: 1850.00,
-        image: "New folder/low1.jpg",
+        image: "images/low1.jpg",
         description: "Acer Aspire laptop with strong battery and neat design",
         category: "Low Budget",
         specs: {
@@ -23,7 +23,7 @@ const laptops = [
         id: 2,
         name: "Dell Laptop",
         price: 1850.00,
-        image: "New folder/low2.jpg",
+        image: "images/low2.jpg",
         description: "Very portable Dell laptop with neat design, comes with bag and charger",
         category: "Low Budget",
         specs: {
@@ -41,7 +41,7 @@ const laptops = [
         id: 3,
         name: "Budget Pro",
         price: 599.99,
-        image: "Assets/low3.jpg",
+        image: "images/Low3.jpg",
         description: "Professional budget laptop with good features",
         category: "Low Budget",
         specs: {
@@ -56,24 +56,24 @@ const laptops = [
         id: 4,
         name: "Budget Compact",
         price: 349.99,
-            image: "Assets/low4.jpg",
-            description: "Compact and lightweight budget laptop",
-            category: "Low Budget",
-            specs: {
-                processor: "Intel Celeron N4020",
-                ram: "4GB DDR4",
-                storage: "64GB eMMC",
-                gpu: "Intel UHD Graphics 600",
-                display: "11.6\" HD"
-            }
-        },
+        image: "images/Low4.jpg",
+        description: "Compact and lightweight budget laptop",
+        category: "Low Budget",
+        specs: {
+            processor: "Intel Celeron N4020",
+            ram: "4GB DDR4",
+            storage: "64GB eMMC",
+            gpu: "Intel UHD Graphics 600",
+            display: "11.6\" HD"
+        }
+    },
 
     // Student Laptops
     {
         id: 5,
         name: "Student Essential",
         price: 599.99,
-        image: "Assets/student1.jpg",
+        image: "images/stud1.jpg",
         description: "Affordable laptop perfect for students",
         category: "Student",
         specs: {
@@ -88,7 +88,7 @@ const laptops = [
         id: 6,
         name: "Student Pro",
         price: 799.99,
-        image: "Assets/student2.jpg",
+        image: "images/stud2.jpg",
         description: "Enhanced student laptop with better performance",
         category: "Student",
         specs: {
@@ -103,7 +103,7 @@ const laptops = [
         id: 7,
         name: "Student Premium",
         price: 899.99,
-        image: "Assets/student3.jpg",
+        image: "images/stud3.jpg",
         description: "Premium student laptop with touch screen",
         category: "Student",
         specs: {
@@ -118,7 +118,7 @@ const laptops = [
         id: 8,
         name: "Student Compact",
         price: 499.99,
-        image: "Assets/student4.jpg",
+        image: "images/stud4.jpg",
         description: "Compact and lightweight student laptop",
         category: "Student",
         specs: {
@@ -135,7 +135,7 @@ const laptops = [
         id: 9,
         name: "Gaming Laptop Pro",
         price: 1299.99,
-        image: "images/gaming-pro.jpg",
+        image: "images/bac1.jpg",
         description: "High-performance gaming laptop with RTX 3080, 32GB RAM, 1TB SSD",
         category: "Gaming",
         specs: {
