@@ -23,7 +23,7 @@ const laptops = [
         id: 2,
         name: "Budget Plus",
         price: 499.99,
-        image: "images/budget-plus.jpg",
+        image: "Assets/low2.jpg",
         description: "Enhanced budget laptop with better performance",
         category: "Low Budget",
         specs: {
@@ -38,7 +38,7 @@ const laptops = [
         id: 3,
         name: "Budget Pro",
         price: 599.99,
-        image: "images/budget-pro.jpg",
+        image: "Assets/low3.jpg",
         description: "Professional budget laptop with good features",
         category: "Low Budget",
         specs: {
@@ -53,24 +53,24 @@ const laptops = [
         id: 4,
         name: "Budget Compact",
         price: 349.99,
-        image: "images/budget-compact.jpg",
-        description: "Compact and lightweight budget laptop",
-        category: "Low Budget",
-        specs: {
-            processor: "Intel Celeron N4020",
-            ram: "4GB DDR4",
-            storage: "64GB eMMC",
-            gpu: "Intel UHD Graphics 600",
-            display: "11.6\" HD"
-        }
-    },
+            image: "Assets/low4.jpg",
+            description: "Compact and lightweight budget laptop",
+            category: "Low Budget",
+            specs: {
+                processor: "Intel Celeron N4020",
+                ram: "4GB DDR4",
+                storage: "64GB eMMC",
+                gpu: "Intel UHD Graphics 600",
+                display: "11.6\" HD"
+            }
+        },
 
     // Student Laptops
     {
         id: 5,
         name: "Student Essential",
         price: 599.99,
-        image: "images/student-essential.jpg",
+        image: "Assets/student1.jpg",
         description: "Affordable laptop perfect for students",
         category: "Student",
         specs: {
@@ -85,7 +85,7 @@ const laptops = [
         id: 6,
         name: "Student Pro",
         price: 799.99,
-        image: "images/student-pro.jpg",
+        image: "Assets/student2.jpg",
         description: "Enhanced student laptop with better performance",
         category: "Student",
         specs: {
@@ -100,7 +100,7 @@ const laptops = [
         id: 7,
         name: "Student Premium",
         price: 899.99,
-        image: "images/student-premium.jpg",
+        image: "Assets/student3.jpg",
         description: "Premium student laptop with touch screen",
         category: "Student",
         specs: {
@@ -115,7 +115,7 @@ const laptops = [
         id: 8,
         name: "Student Compact",
         price: 499.99,
-        image: "images/student-compact.jpg",
+        image: "Assets/student4.jpg",
         description: "Compact and lightweight student laptop",
         category: "Student",
         specs: {
