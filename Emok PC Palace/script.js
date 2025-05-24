@@ -5,7 +5,7 @@ const laptops = [
         id: 1,
         name: "Acer Aspire",
         price: 1850.00,
-        image: "New folder/low1.jpg",
+        image: "Assets/low1.jpg",
         description: "Acer Aspire laptop with strong battery and neat design",
         category: "Low Budget",
         specs: {
