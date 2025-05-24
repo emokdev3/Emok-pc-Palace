@@ -90,17 +90,18 @@ const laptops = [
     },
     {
         id: 6,
-        name: "Student Pro",
-        price: 799.99,
+        name: "Dell Vostro 5402",
+        price: 4150.00,
         image: "images/stud2.jpg",
-        description: "Enhanced student laptop with better performance",
+        description: "Professional laptop with backlit keyboard and fingerprint sensor",
         category: "Student",
         specs: {
-            processor: "Intel Core i5-1135G7",
-            ram: "8GB DDR4",
-            storage: "512GB SSD",
-            gpu: "Intel Iris Xe Graphics",
-            display: "14\" FHD"
+            processor: "Intel Core i5 11th Generation",
+            ram: "8GB RAM",
+            storage: "256GB SSD",
+            speed: "2.40 GHz",
+            display: "14\" FHD 1080p",
+            features: "Backlit Keyboard, Fingerprint Sensor"
         }
     },
     {
