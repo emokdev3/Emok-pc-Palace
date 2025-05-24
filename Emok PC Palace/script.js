@@ -3,21 +3,20 @@ const laptops = [
     // Low Budget Laptops
     {
         id: 1,
-        name: "HP Notebook",
-        price: 3000.00,
+        name: "Acer Aspire",
+        price: 1850.00,
         image: "images/low1.jpg",
-        description: "Powerful laptop with dedicated graphics and strong battery life",
+        description: "Acer Aspire laptop with strong battery and neat design",
         category: "Low Budget",
         specs: {
-            processor: "Intel Core i7 6th Generation",
-            ram: "8GB RAM",
+            processor: "Intel Celeron 6th Generation",
+            ram: "4GB RAM",
             storage: "500GB Hard Drive",
-            speed: "2.50 GHz",
-            gpu: "AMD Radeon Graphics (2GB Dedicated)",
+            speed: "2.0 GHz",
             display: "15\" Screen",
             ports: "USB, HDMI, LAN",
-            features: "Full Keyboard",
-            battery: "Strong Battery Life"
+            battery: "Strong Battery Life",
+            condition: "Neat"
         }
     },
     {
