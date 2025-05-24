@@ -39,17 +39,19 @@ const laptops = [
     },
     {
         id: 3,
-        name: "Budget Pro",
-        price: 599.99,
+        name: "HP Probook x360 11 G1",
+        price: 2400.00,
         image: "images/Low3.jpg",
-        description: "Professional budget laptop with good features",
+        description: "Convertible laptop with touch screen and strong battery life",
         category: "Low Budget",
         specs: {
-            processor: "Intel Pentium Gold 7505",
-            ram: "8GB DDR4",
-            storage: "256GB SSD",
-            gpu: "Intel UHD Graphics",
-            display: "14\" FHD"
+            processor: "Intel Celeron N3350 Quadcore",
+            ram: "4GB RAM",
+            storage: "64GB SSD + 128GB SD Card",
+            features: "Empty m.2 SSD slot, Touch Screen, Convertible",
+            display: "12.5\" Touch Screen",
+            ports: "USB, HDMI",
+            battery: "Strong Battery Life"
         }
     },
     {
