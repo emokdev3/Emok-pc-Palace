@@ -3,17 +3,20 @@ const laptops = [
     // Low Budget Laptops
     {
         id: 1,
-        name: "Budget Essential",
-        price: 399.99,
+        name: "Acer Aspire",
+        price: 1850.00,
         image: "New folder/low1.jpg",
-        description: "Basic laptop for everyday computing needs",
+        description: "Acer Aspire laptop with strong battery and neat design",
         category: "Low Budget",
         specs: {
-            processor: "Intel Celeron N4020",
-            ram: "4GB DDR4",
-            storage: "128GB eMMC",
-            gpu: "Intel UHD Graphics 600",
-            display: "14\" HD"
+            processor: "Intel Celeron 6th Generation",
+            ram: "4GB RAM",
+            storage: "500GB Hard Drive",
+            gpu: "Intel HD Graphics",
+            display: "15\" HD",
+            speed: "2.0 GHz",
+            ports: "USB, HDMI, LAN",
+            battery: "Strong Battery Life"
         }
     },
     {
