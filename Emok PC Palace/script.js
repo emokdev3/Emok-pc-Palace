@@ -107,32 +107,35 @@ const laptops = [
     },
     {
         id: 7,
-        name: "Student Premium",
-        price: 899.99,
+        name: "HP Probook 640 G4",
+        price: 3850.00,
         image: "images/stud3.jpg",
-        description: "Premium student laptop with touch screen",
+        description: "Professional laptop with fingerprint sensor and high-performance specs",
         category: "Student",
         specs: {
-            processor: "Intel Core i7-1165G7",
-            ram: "16GB DDR4",
-            storage: "512GB SSD",
-            gpu: "Intel Iris Xe Graphics",
-            display: "13.3\" FHD Touch"
+            processor: "Intel Core i5 7th Generation",
+            ram: "8GB DDR4",
+            storage: "256GB SSD M.2",
+            speed: "2.6 GHz",
+            display: "14\" FHD 1080p",
+            features: "Fingerprint Sensor"
         }
     },
     {
         id: 8,
-        name: "Student Compact",
-        price: 499.99,
+        name: "Dell Inspiron",
+        price: 2600.00,
         image: "images/stud4.jpg",
-        description: "Compact and lightweight student laptop",
+        description: "X360 convertible touchscreen laptop, extremely neat",
         category: "Student",
         specs: {
-            processor: "Intel Pentium Gold 7505",
+            processor: "Intel Pentium Silver 7th Generation",
             ram: "4GB DDR4",
             storage: "128GB SSD",
-            gpu: "Intel UHD Graphics",
-            display: "11.6\" HD"
+            features: "Touchscreen, X360 Convertible, Webcam",
+            display: "13\" Touchscreen",
+            ports: "HDMI",
+            condition: "Extremely Neat"
         }
     }
 ];
