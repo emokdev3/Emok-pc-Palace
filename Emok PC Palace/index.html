@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emok PC Palace - Premium Laptops</title>
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Emok PC Palace</a>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-laptop-code"></i>
+                <span>Emok PC Palace</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#laptops">Laptops</a>
@@ -39,22 +54,45 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-md-6">
-                    <h1>Premium Laptops</h1>
-                    <p class="lead">Find your perfect laptop. From budget to student laptops, we offer the best selection of high-quality laptops at competitive prices in cedis.</p>
-                    <a href="https://chat.whatsapp.com/Dsx6WejWjS9HvOK0T8sFIK" class="btn btn-primary btn-lg" target="_blank">Join Us</a>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Find Your Perfect Laptop</h1>
+                <p class="lead">Discover high-quality laptops at unbeatable prices. From gaming to business, we've got you covered.</p>
+                <div class="hero-buttons">
+                    <a href="#featured" class="hero-btn hero-btn-primary">Shop Now</a>
+                    <a href="https://chat.whatsapp.com/your-group-link" class="hero-btn hero-btn-outline">Join Our Group</a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Warranty</span>
+                    </div>
                 </div>
             </div>
+            <div class="hero-image">
+                <img src="images/bac1.jpg" alt="Premium Laptop">
+            </div>
+        </div>
+        <div class="hero-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
         </div>
     </section>
 
     <!-- Featured Laptops -->
-    <section id="laptops" class="py-5">
+    <section id="laptops" class="section-padding">
         <div class="container">
-            <h2 class="text-center mb-4">Featured Laptops</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Featured Laptops</h2>
+                <p class="text-muted">Explore our handpicked selection of premium laptops</p>
+            </div>
             <div class="row" id="featuredLaptops">
                 <!-- Laptops will be loaded dynamically -->
             </div>
@@ -62,24 +100,31 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="categories" class="py-5 bg-light">
+    <section id="categories" class="section-padding bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Laptop Categories</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Laptop Categories</h2>
+                <p class="text-muted">Find the perfect laptop for your needs</p>
+            </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="category-card">
-                        <i class="fas fa-tags"></i>
+                        <div class="category-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
                         <h3>Low Budget Laptops</h3>
                         <p>Affordable laptops for everyday computing needs</p>
-                        <a href="#laptops" class="btn btn-outline-primary">View Low Budget Laptops</a>
+                        <a href="#laptops" class="btn btn-outline-primary">View Collection</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="category-card">
-                        <i class="fas fa-graduation-cap"></i>
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
                         <h3>Student Laptops</h3>
-                        <p>Affordable laptops perfect for students</p>
-                        <a href="#laptops" class="btn btn-outline-primary">View Student Laptops</a>
+                        <p>Perfect laptops for students and academic work</p>
+                        <a href="#laptops" class="btn btn-outline-primary">View Collection</a>
                     </div>
                 </div>
             </div>
@@ -87,56 +132,107 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="section-padding">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2>About Emok PC Palace</h2>
-                    <p>We specialize in providing high-quality laptops for every need. Our carefully curated selection ensures you get the perfect laptop that matches your requirements and budget.</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-check"></i> Premium Laptop Selection</li>
-                        <li><i class="fas fa-check"></i> Expert Consultation</li>
-                        <li><i class="fas fa-check"></i> Best Price Guarantee in Cedis</li>
-                        <li><i class="fas fa-check"></i> Warranty Coverage</li>
-                    </ul>
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-content">
+                        <h2>About Emok PC Palace</h2>
+                        <p class="lead">Your trusted source for premium laptops in Ghana</p>
+                        <p>We specialize in providing high-quality laptops that meet your specific needs. Our carefully curated selection ensures you get the perfect laptop that matches your requirements and budget.</p>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-laptop"></i>
+                                <h4>Premium Selection</h4>
+                                <p>Handpicked laptops for every need</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <h4>Expert Support</h4>
+                                <p>24/7 customer assistance</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Warranty</h4>
+                                <p>Comprehensive warranty coverage</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tags"></i>
+                                <h4>Best Prices</h4>
+                                <p>Competitive prices in Cedis</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="About Us" class="img-fluid rounded">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="About Us" class="img-fluid rounded-3 shadow">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="section-padding bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <p class="text-muted">Get in touch with us for any inquiries</p>
+            </div>
             <div class="row">
-                <div class="col-md-6">
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="contact-info">
                         <h3>Get in Touch</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> Bantama High Street,Kumasi, Ghana</p>
-                        <p><i class="fas fa-phone"></i> +233 50 1950 980</p>
-                        <p><i class="fas fa-envelope"></i> emokdev@gmail.com</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Bantama High Street, Kumasi, Ghana</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+233 50 1950 980</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>emokdev@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -145,16 +241,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Emok PC Palace</h5>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Emok PC Palace</span>
+                    </div>
                     <p>Your trusted source for premium laptops in Ghana.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
                     <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#laptops">Laptops</a></li>
                         <li><a href="#categories">Categories</a></li>
@@ -162,7 +261,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <h5>Newsletter</h5>
                     <form class="newsletter-form">
                         <div class="input-group">
@@ -173,13 +272,44 @@
                 </div>
             </div>
             <hr>
-            <div class="text-center">
+            <div class="footer-bottom">
                 <p>&copy; 2024 Emok PC Palace. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Remove preloader when page is loaded
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Add navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html> 

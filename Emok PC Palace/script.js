@@ -147,24 +147,43 @@ const newsletterForm = document.querySelector('.newsletter-form');
 
 // Initialize the website
 document.addEventListener('DOMContentLoaded', () => {
+    try {
+        initializeApp();
+    } catch (error) {
+        console.error('Failed to initialize app:', error);
+        showNotification('Failed to initialize the application. Please refresh the page.', 'danger');
+    }
+});
+
+// Initialize all app components
+function initializeApp() {
     loadLaptops();
     initializeSmoothScroll();
     initializeFormHandlers();
     initializeCategoryFilters();
-});
+    initializeIntersectionObserver();
+}
 
 // Load laptops into the featured laptops section
-function loadLaptops(category = null) {
-    featuredLaptopsContainer.innerHTML = ''; // Clear existing content
-    
-    const filteredLaptops = category 
-        ? laptops.filter(laptop => laptop.category === category)
-        : laptops;
-    
-    filteredLaptops.forEach(laptop => {
-        const laptopCard = createLaptopCard(laptop);
-        featuredLaptopsContainer.appendChild(laptopCard);
-    });
+async function loadLaptops(category = null) {
+    try {
+        const featuredLaptopsContainer = document.getElementById('featuredLaptops');
+        featuredLaptopsContainer.innerHTML = '<div class="text-center"><div class="spinner-border" role="status"></div></div>';
+        
+        const filteredLaptops = category 
+            ? laptops.filter(laptop => laptop.category === category)
+            : laptops;
+        
+        featuredLaptopsContainer.innerHTML = '';
+        
+        filteredLaptops.forEach(laptop => {
+            const laptopCard = createLaptopCard(laptop);
+            featuredLaptopsContainer.appendChild(laptopCard);
+        });
+    } catch (error) {
+        console.error('Error loading laptops:', error);
+        showNotification('Failed to load laptops. Please try again.', 'danger');
+    }
 }
 
 // Create a laptop card element
@@ -270,23 +289,38 @@ function initializeSmoothScroll() {
 
 // Initialize form handlers
 function initializeFormHandlers() {
-    // Contact form handler
+    const contactForm = document.getElementById('contactForm');
+    const newsletterForm = document.querySelector('.newsletter-form');
+
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const formData = new FormData(contactForm);
-            showNotification('Message sent successfully!', 'success');
-            contactForm.reset();
+            try {
+                const formData = new FormData(contactForm);
+                // Here you would typically send the form data to a server
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+                showNotification('Message sent successfully!', 'success');
+                contactForm.reset();
+            } catch (error) {
+                console.error('Error sending message:', error);
+                showNotification('Failed to send message. Please try again.', 'danger');
+            }
         });
     }
     
-    // Newsletter form handler
     if (newsletterForm) {
-        newsletterForm.addEventListener('submit', (e) => {
+        newsletterForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const email = newsletterForm.querySelector('input[type="email"]').value;
-            showNotification('Subscribed to newsletter!', 'success');
-            newsletterForm.reset();
+            try {
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                // Here you would typically send the email to a server
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+                showNotification('Subscribed to newsletter!', 'success');
+                newsletterForm.reset();
+            } catch (error) {
+                console.error('Error subscribing to newsletter:', error);
+                showNotification('Failed to subscribe. Please try again.', 'danger');
+            }
         });
     }
 }
@@ -295,7 +329,12 @@ function initializeFormHandlers() {
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `alert alert-${type} notification`;
-    notification.textContent = message;
+    notification.innerHTML = `
+        <div class="d-flex align-items-center">
+            <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+            <span>${message}</span>
+        </div>
+    `;
     
     document.body.appendChild(notification);
     
@@ -303,30 +342,33 @@ function showNotification(message, type = 'info') {
     notification.style.top = '20px';
     notification.style.right = '20px';
     notification.style.zIndex = '1000';
+    notification.style.minWidth = '300px';
     
     setTimeout(() => {
-        notification.remove();
+        notification.style.opacity = '0';
+        notification.style.transition = 'opacity 0.5s ease-in-out';
+        setTimeout(() => notification.remove(), 500);
     }, 3000);
 }
 
 // Add to cart functionality
 function addToCart(laptopId) {
-    const laptop = laptops.find(l => l.id === laptopId);
-    if (laptop) {
-        // Create WhatsApp message with laptop details
-        const message = `Hello, I'm interested in purchasing the ${laptop.name}.\n\nDetails:\n- Price: ₵${laptop.price}\n- Processor: ${laptop.specs.processor}\n- RAM: ${laptop.specs.ram}\n- Storage: ${laptop.specs.storage}\n- Graphics: ${laptop.specs.gpu}\n- Display: ${laptop.specs.display}`;
+    try {
+        const laptop = laptops.find(l => l.id === laptopId);
+        if (!laptop) {
+            throw new Error('Laptop not found');
+        }
+
+        const message = `Hello, I'm interested in purchasing the ${laptop.name}.\n\nDetails:\n- Price: ₵${laptop.price.toFixed(2)}\n${Object.entries(laptop.specs).map(([key, value]) => `- ${key.charAt(0).toUpperCase() + key.slice(1)}: ${value}`).join('\n')}`;
         
-        // Encode the message for URL
         const encodedMessage = encodeURIComponent(message);
-        
-        // Create WhatsApp URL with the phone number and message
         const whatsappUrl = `https://wa.me/233594564356?text=${encodedMessage}`;
         
-        // Open WhatsApp in a new tab
         window.open(whatsappUrl, '_blank');
-        
-        // Show notification
         showNotification(`Opening DM to discuss ${laptop.name}`, 'success');
+    } catch (error) {
+        console.error('Error adding to cart:', error);
+        showNotification('Failed to open WhatsApp. Please try again.', 'danger');
     }
 }
 
